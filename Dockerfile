@@ -9,4 +9,4 @@ RUN apt update --allow-releaseinfo-change && \
 
 RUN conda install -c conda-forge -c bioconda python=3.12 samtools minimap2 htslib pyabpoa bcftools -y
 
-RUN pip install medaka
+RUN pip install --no-cache-dir medaka
